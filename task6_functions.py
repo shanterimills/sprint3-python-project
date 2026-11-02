@@ -51,3 +51,13 @@ def filter_by_genre (data, genre = 'Platform'):
    
 x = filter_by_genre (video_game_sales)
 print (x)
+
+#function that returns formatted string as result using a loop
+def get_summary(game):
+    result = (f"{game[1]} ({game[3]}) - {game[4]} - ${game[9]}M")
+    return result
+
+for game in video_game_sales:
+    print (get_summary(game))
+    
+
